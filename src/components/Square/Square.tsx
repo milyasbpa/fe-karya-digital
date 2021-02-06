@@ -11,13 +11,16 @@ export default function Square (props: ISquareProps) {
   return (
     <div
             style={{
+              display:'flex',
+              alignItems:'center',
+              justifyContent:'center',
               filter: (props.darkenColor && props.conditionDarkenItem) ? 'brightness(60%)' : 'brightness(100%)',
-              width:'40px',
-              height:'40px',
+              width:'60px',
+              height:'60px',
               backgroundColor:props.arrayWarna[Math.floor(Math.random() * (CSS_COLOR_NAMES.length - 0) ) + 0]
             }}
           >
-            {(props.darkenColor && props.conditionDarkenItem).toString()}
+            {(props.darkenColor && props.conditionDarkenItem) ? 'dark' : 'normal' }
           </div>
   );
 }
