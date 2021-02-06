@@ -2,7 +2,7 @@
 
 Installation with :
 
-### `npm start`
+### `npm install`
 
 ## Available Scripts
 
